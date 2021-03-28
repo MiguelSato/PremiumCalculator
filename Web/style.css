@@ -1,0 +1,43 @@
+form{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+
+label {
+    width:100px;
+    text-align: left;
+    margin-left:10px;
+    display: inline-block;
+}
+
+
+button{
+	margin-left:10px;
+}
+
+
+/*classes*/
+
+.gray_brackground{
+	background-color: lightgray;
+}
+
+.inner_div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.left_div{
+	width: 50%;
+	float: left;
+}
+
+.right_div{
+	width: 50%;
+	float: right;
+}
+
+.clear_div{
+	clear: both;
+}

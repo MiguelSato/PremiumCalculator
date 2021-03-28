@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Premium Calculator</title>
+
+		<link rel="stylesheet" href="style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="ageCalculation.js" ></script>
+		<script src="index.js" ></script>
+	</head>
+
+	<body>
+
+		<form id="input_form">
+			<div class="inner_div">
+				<label for="birthdate">Date of birth</label>
+				<input type="date" name="birthdate" id="birthdate" required>
+			</div>
+			
+			<div class="inner_div">
+				<label for="states">State</label>
+				<select name="states" id="states"></select>
+			</div>
+
+			<div class="inner_div">
+				<label for="age">Age</label>
+				<input name="age" id="age" class="gray_brackground" readonly>
+			</div>
+		</form>	
+
+		<div class="left_div">
+			
+			<div class="left_div inner_div">
+				<button id="premium_button">Get Value</button>
+			</div>
+
+			<div class="right_div inner_div">
+				<input type="text" id="premium_text" readonly class="gray_brackground"/>
+			</div>
+
+		</div>
+
+		<div class="right_div">
+
+			<div class="left_div inner_div">
+
+				<select id="period_select" class="gray_brackground"  disabled>
+					<option hidden disabled selected value>-- select an option --</option>
+					<option value="monthly">Monthly</option>
+					<option value="quarterly">Quarterly</option>
+					<option value="semi-annual">Semi-Annually</option>
+					<option value="annual">Annually</option>
+				</select>
+
+			</div>
+
+			<div class="right_div">
+
+				<div class="inner_div">
+					<label for="annual">Annual</label>
+					<input type="text" name="annual" id="annual" class="gray_brackground" readonly/>
+				</div>
+
+				<div class="inner_div">
+					<label for="monthly">Monthly</label>
+					<input type="text" name="monthly" id="monthly" class="gray_brackground" readonly/>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="clear_div"></div>
+
+	</body>
+
+</html> 
